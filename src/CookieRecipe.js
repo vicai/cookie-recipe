@@ -105,31 +105,32 @@ export const CookieRecipe = () => {
           <div>Choose number of servings</div>
           <form onSubmit={handleServingSubmit}>
             <input
+              className="servingInput"
               onChange={handleServingValueChange}
               placeholder="type in your serving number"
               value={servingNumber}
             />
           </form>
-        </div>
-        <div>
-          {
-            <button
-              className={"footerButton"}
-              onClick={handleBackClick}
-              disabled={stepIndex <= 0}
-            >
-              Back
-            </button>
-          }
-          {
-            <button
-              className={"footerButton"}
-              onClick={handleNextClick}
-              disabled={stepIndex >= steps.length - 1}
-            >
-              Next
-            </button>
-          }
+          <div className="formFooter">
+            {
+              <button
+                className={"footerButton"}
+                onClick={handleBackClick}
+                disabled={stepIndex <= 0}
+              >
+                Back
+              </button>
+            }
+            {
+              <button
+                className={"footerButton"}
+                onClick={handleNextClick}
+                disabled={stepIndex >= steps.length - 1}
+              >
+                Next
+              </button>
+            }
+          </div>
         </div>
       </div>
       <div className={"stepsImageContainer"}>

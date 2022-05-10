@@ -11,9 +11,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 1000px;
+  width: 600px;
   height: 400px;
   padding: 58px 76px;
+  border-radius: 5px;
 }
 
 .stepsForm {
@@ -21,6 +22,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-right: 21px;
+  text-align: left;
 }
 
 .stepsImage {
@@ -47,4 +49,17 @@
 .footerButton:disabled {
   background-color: #cccccc;
   color: #666666;
+}
+
+.servingInput {
+  padding: 0 5px;
+  margin: 10px 0;
+  height: 30px;
+  width: 213px;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+}
+
+.formFooter {
+  margin: 10px 0;
 }
