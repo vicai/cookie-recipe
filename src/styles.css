@@ -1,0 +1,50 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.cookieRecipe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 1000px;
+  height: 400px;
+  padding: 58px 76px;
+}
+
+.stepsForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 21px;
+}
+
+.stepsImage {
+  width: 200px;
+}
+
+.servingForm {
+  padding: 21px 0;
+}
+
+.footerButton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 8px;
+}
+
+.footerButton:disabled {
+  background-color: #cccccc;
+  color: #666666;
+}
